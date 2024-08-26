@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getMetaRedirect allows existing leading and trailing forward slashes 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/toPath/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/toPath/\\" />"`;
+
+exports[`getMetaRedirect handles deep paths 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/a/b/c/d/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/a/b/c/d/\\" />"`;
+
+exports[`getMetaRedirect handles offset wrapping forward slashes 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/a/b/c/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/a/b/c/\\" />"`;
+
+exports[`getMetaRedirect handles redirecting to a file 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/test.txt'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/test.txt\\" />"`;
+
+exports[`getMetaRedirect handles redirecting to a file in a folder 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/a/b/test.txt'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/a/b/test.txt\\" />"`;
+
+exports[`getMetaRedirect handles redirecting to root 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/\\" />"`;
+
+exports[`getMetaRedirect leaves full urls untouched 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefinedhttp://example.com'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefinedhttp://example.com\\" />"`;
+
+exports[`getMetaRedirect leaves full urls untouched 2`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefinedhttp://example.com/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefinedhttp://example.com/\\" />"`;
+
+exports[`getMetaRedirect leaves full urls untouched 3`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefinedhttp://example.com/a/b/c'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefinedhttp://example.com/a/b/c\\" />"`;
+
+exports[`getMetaRedirect replaces duplicate slashes with single slash 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/topath/a/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/topath/a/\\" />"`;
+
+exports[`getMetaRedirect trims leading and trailing whitespace 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/toPath/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/toPath/\\" />"`;
+
+exports[`getMetaRedirect wraps path in forward slashes 1`] = `"<meta http-equiv=\\"refresh\\" content=\\"0; URL='undefined/toPath/'\\" /><link rel=\\"canonical\\" href=\\"undefinedundefined/toPath/\\" />"`;
